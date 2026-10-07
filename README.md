@@ -1,3 +1,11 @@
+## PYQ-Hub
+
+A portal for uploading, organizing, and searching previous-year exam papers by subject and semester — a rebuild of the original [PYQ-Hub](https://github.com/jainaviral116-code/PYQ-Hub) (Vite + React + Appwrite) on Next.js + Prisma + Postgres, with a retrieval-augmented (RAG) semantic search layer added on top: local sentence embeddings, pgvector similarity search, and LLM-powered grounded Q&A over the actual PDF corpus.
+
+**Status:** rebuild in progress. See [`BUILD_GUIDE.md`](./BUILD_GUIDE.md) for the full staged plan, the architecture, and the reasoning behind every technical choice.
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
