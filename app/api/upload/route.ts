@@ -11,7 +11,7 @@ export async function POST(request:Request) {
     const blob = await put(file.name, file, {access : 'public'});
 
     const paper = await prisma.paper.create({
-        data : {title: title, subject:subject, semester:semester, fileURL:blob.url},
+        data : {title: title, subject:subject, semester:semester, fileUrl:blob.url},
     });
 
     return Response.json(paper);
