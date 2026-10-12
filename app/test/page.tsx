@@ -39,6 +39,7 @@ export default function List(){
         <>
             <form onSubmit={handleSubmit}>
                 <input type="file" name="file" />
+                
                 <input type="text" name="subject" />
                 <input type="text" name="title" />
                 <input type="number" id="file" name="semester" />
