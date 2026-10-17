@@ -30,6 +30,8 @@ export default function List(){
             body: formData
         }
     )
+    
+        setLoading(false);
 
     }
 
@@ -40,9 +42,14 @@ export default function List(){
             <form onSubmit={handleSubmit}>
                 <input type="file" name="file" />
                 
-                <input type="text" name="subject" />
-                <input type="text" name="title" />
-                <input type="number" id="file" name="semester" />
+                <input type="text" name="subject" className="rounded border border-gray-400 px-3 py-2"/>
+                <input type="text" name="title" className="rounded border border-gray-400 px-3 py-2"/>
+                <input type="number" id="file" name="semester" className="rounded border border-gray-400 px-3 py-2"/>
+                <button
+                    type="submit"
+                    disabled={loading}
+
+                >{loading? "Uploading..." : "Upload"}</button>
             </form>
 
 
