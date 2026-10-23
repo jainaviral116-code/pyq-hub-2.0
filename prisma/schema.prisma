@@ -19,4 +19,13 @@ model Paper {
   semester  String
   fileUrl   String   // the Vercel Blob URL
   createdAt DateTime @default(now())
+  chunks    Chunk[]
+}
+
+model Chunk {
+  id         String   @id @default(cuid())
+  content    String
+  embedding  Unsupported("vector(384)")
+  paper      Paper    @relation(fields: [paper_id], references: [id])
+  paper_id   String
 }

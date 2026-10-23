@@ -55,7 +55,7 @@ export default function List(){
 
             <ul>
                 {papers.map((paper, index) => {
-                    return <li key={index}>subject : {paper.subject} and title : {paper.title}</li>
+                    return <li key={index}>subject : {paper.subject} and title : {paper.title} and url : {paper.fileUrl}</li>
                 })}
             </ul>
 
